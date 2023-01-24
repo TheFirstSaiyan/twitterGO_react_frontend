@@ -41,7 +41,9 @@ function Following(props) {
             <table className="container table table-fixed border table-hover">
                 <thead>
                     <tr>
-                        <th>Friend</th>
+                        <th>followee username</th>
+                        <th>action</th>
+
                     </tr>
                 </thead>
                 <tbody>

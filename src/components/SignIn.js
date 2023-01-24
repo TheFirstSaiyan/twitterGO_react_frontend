@@ -130,8 +130,8 @@ function SignIn(props) {
         </div>}
         {props.signedIn && <div style={{ width: "80vw" }}>
             {tweets.length == 0 && <div>No Tweet from you yet!</div>}
-            <div className="d-flex justify-content-around mt-2 align-items-center">
-                <textarea type='text' className="shadow col-6" placeholder="tweet here...." rows={4} maxLength={100} value={tweet} onChange={(e) => (setTweet(e.target.value))}></textarea>
+            <div className="d-flex justify-content-around mt-2 mb-4 align-items-center">
+                <textarea type='text' className="shadow col-8 border" placeholder="tweet here...." rows={2} maxLength={100} value={tweet} onChange={(e) => (setTweet(e.target.value))}></textarea>
                 <button className="btn btn-sm btn-success shadow" onClick={addTweet}>Tweet Now</button>
             </div>
             <div >{tweets.map((tweet, i) => (<Tweet key={i} tweet={tweet} getTweets={getTweets} />))}</div>

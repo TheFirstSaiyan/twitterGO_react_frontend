@@ -48,7 +48,7 @@ function People(props) {
                 let buttonTexts = [];
                 for(let i = 0;i< Object.keys(data).length;i++)
                 {
-                    
+
                     let buttonText = await checkFollowing(localStorage.getItem("user"),data[i].name);
                     buttonTexts.push(buttonText);
                 }
@@ -90,7 +90,8 @@ function People(props) {
             <table className="container table table-fixed border table-hover">
                 <thead>
                     <tr>
-                        <th>User</th>
+                        <th>username</th>
+                        <th>follow/unfollow</th>
                     </tr>
                 </thead>
                 <tbody>
