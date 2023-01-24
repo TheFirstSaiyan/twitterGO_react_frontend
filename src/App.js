@@ -26,9 +26,6 @@ function App() {
     <Route exact path="/people" element={<People setSignedIn = {setSignedIn}/>} />
     <Route exact path="/following" element={<Following setSignedIn = {setSignedIn}/>} />
     <Route exact path="/friend/tweets" element={<FriendTweets setSignedIn = {setSignedIn}/>} />
-
-
-
     </Routes>
     </div>
     
